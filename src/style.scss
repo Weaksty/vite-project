@@ -1,0 +1,37 @@
+*{margin: 0px;padding: 0px;}
+$mainColor:rgb(2, 51, 18);
+$mainRed:rgb(0, 0, 0);
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:white;
+    background-color:$mainRed;
+}
+ul{ 
+    display: flex;
+    justify-content:space-between;
+    padding: 0px;
+}
+ul li{list-style-type:none;
+     margin:0px;
+     padding:20px;
+     font-size:18px;
+     padding-left: 50px;
+     padding-right: 50px;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+body{background-color: $mainColor;
+}    
