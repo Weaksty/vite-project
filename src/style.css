@@ -47,6 +47,10 @@ ul li a {
   right: 20px;
 }
 
+.logo {
+  background-color: rgb(25, 25, 25);
+}
+
 /* Header */
 /* Main */
 main {

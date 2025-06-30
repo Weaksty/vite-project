@@ -8,7 +8,7 @@
 <body>
 <header>
  <!-- LOGO -->
-    <div class="logo"><img src="" alt="Vite logo"></div>
+    <div class="logo"><img src="/public/img/vite.svg" alt="Vite logo" width="50px "></div>
     <!-- LOGO -->
      <!--NAVIGATION-->
     <nav>
@@ -19,15 +19,20 @@
         <li><a href="#support">Помощь</a></li>
       </ul>
     </nav>
+    <form role="search">
+      <label for="search">Search:</label>
+      <input type="search" id="search" placeholder="Поиск">
+    </form>
     <!--NAVIGATION-->
     <!-- LOGIN BUTTONS -->
     <div class="login">
-    <button>Войти</button>
-    <button>Зарегаться</button>
+    <button class="Sing-up" type="button" >Sign up</a></button>
+        <button class="Sing-in" type="button">Sign in</a></button>
     </div>
 </header>
     <!-- LOGIN BUTTONS -->
 <main>
+  <!-- КАРТОЧКИ -->
 <article class="category-block">
                 <h3>Gaming accessories</h3>
                 <div class="subject">
@@ -298,6 +303,7 @@
             </div>
             <a href="#">See more...</a>
 </article>  
+<!-- КАРТОЧКИ  -->
 </main>
    
     <script type="module" src="/src/main.js"></script>
