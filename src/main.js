@@ -4,3 +4,7 @@ import { products } from './products.js'
 //import
 
 console.log(products)
+const artk = document.getElementById("Add-Block")
+artk.onclick = function(){
+    window.location.href = "/src/AddToCataloge.html"
+}

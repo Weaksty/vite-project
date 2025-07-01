@@ -12,7 +12,54 @@ header{
     position: relative;
     color:$accent;
     background-color:$mainSecond;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+/* Search */
+.conteiner-header {
+  display: flex;
+  align-items: center;
+ max-width: 400px;
+ margin: 0 auto;
+ font-family: Arial, Helvetica, sans-serif;
+ flex-wrap: nowrap;
+}
+
+.input-search {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    
+}
+
+.input-search:hover {
+    border-color: blue;
+}
+
+.search-button {
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #f0c14b;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 100px;
+    
+    
+}
+
+.search-button:hover {
+    background-color: #e2b638;
+}
+/*  END Search */
 ul{ 
     display: flex;
     justify-content:space-between;
@@ -20,38 +67,82 @@ ul{
 }
 ul li{
     list-style-type:none;
-     margin:0px;
-     padding:20px;
-     font-size:18px;
-     padding-left: 50px;
-     padding-right: 50px;
+     margin:20px;
+     padding:5px;
+     font-size: 20px;
+     padding-left: 10px;
+     margin-left: 100px;
+     padding-right: 10px;
+     border-radius: 10px;
+     text-align: center;
+}
+ul li:hover {
+  outline: 2px solid white;  
 }
 ul li a{
     text-decoration: none;
-    color:$accent;
+    color:white;
 }
+ul li a:focus {
+  outline: none;
+}
+
 .logo{
     position: absolute;
     left: 20px;
     font-weight: bold;
     font-size: 20px;
 }
+
+.logo {
+    background-color: $mainSecond   ;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+/* Кнопки Войти и Зарегистрироваться */
+.sing-button {
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+}
+.Sing-up a {
+  color: white;
+}
+.Sing-in a {
+  color: white;
+}
+
+.Sing-up, .Sing-in {
+    background: none;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;  
+}
+
+.Sing-up:hover, .Sing-in:hover {
+    outline: 2px solid white;
+}
 .login {
     position: absolute;
     right: 20px;
 }
-.logo {
-    background-color: $mainSecond;
-    
-}
+/* Кнопки Войти и Зарегистрироваться */
 /* Header */
 /* Main */
 main {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(5, 1fr);
     gap: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .category-block {
     background-color: white;
@@ -103,15 +194,27 @@ main {
     text-decoration: underline;
   }
 .category-block:hover{
-    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.1);
+    box-shadow:$accent 0px,1px;
 
 }
 .subject:hover img {
     transform: scale(1.3);
 }
-
-
-
+#Add-Block {
+  display: flex;
+  justify-content: center  ;
+  align-items: center;
+  cursor: pointer;
+}
+#AddButton {
+  background: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
 
 /* Main */
 body{background-color: $mainColor;
