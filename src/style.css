@@ -230,6 +230,75 @@ main {
 }
 
 /* Main */
+/* AddArticle */
+.modul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+#close {
+  margin-bottom: 15%;
+  margin-left: 95%;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  border: 2px solid #ddd;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+}
+
+.inputModul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20%;
+  gap: 5px;
+}
+
+.inputModul input {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+#submit {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 190px;
+}
+
+.divButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divQue {
+  background-color: white;
+  border: none;
+  color: none;
+  font-size: 20px;
+}
+
+/* END AddArticle */
 body {
   background-color: rgb(15, 15, 15);
 }/*# sourceMappingURL=style.css.map */
